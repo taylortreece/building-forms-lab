@@ -4,9 +4,11 @@ import BandInput from '../components/BandInput.js';
 
 class BandsContainer extends Component {
   render() {
+    debugger
     return(
       <ul>
         <BandInput addBand={this.props.addBand} />
+        {console.log(this.props)}
         {this.props.bands.map(band => (<li key={band.name}>{band.name}</li>))}
       </ul>
     )
